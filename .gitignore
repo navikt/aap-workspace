@@ -1,0 +1,12 @@
+# .gitignore
+/*
+!/*.*
+!gradle
+!gradlew
+!templates/
+
+.idea/
+.gradle/
+
+#generated file:
+settings.gradle.kts 
