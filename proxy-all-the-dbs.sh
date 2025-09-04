@@ -110,7 +110,9 @@ trap _cleanup EXIT INT TERM
 ###############################################################################
 
 
-echo "NB: you must be authenticated to gcloud for this to work. kubectx and nais must be installed and configured."
+echo "If you need to do nais login, do that now. Otherwise press any key to continue...". 
+echo "kubectx and yq must be installed."
+read wait
 delay=${1:-10}
 start_proxies "$delay"
 echo "All proxies started."
