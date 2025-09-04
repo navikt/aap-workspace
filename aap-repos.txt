@@ -1,5 +1,5 @@
 #gh api /teams/$(gh api /orgs/navikt/teams/aap | jq -r '.id')/repos --paginate \
-#  | jq -r 'map_values(select(.archived == false and .name != "aap-workflows" and .name != "vault-iac" and .name != "afp") | .name) | join("\n")'
+#  | jq -r 'map_values(select(.archived == false and .name != "vault-iac" and .name != "afp") | .name) | join("\n")'
 ktor-openapi-generator
 lagspill-bot
 mine-aap
