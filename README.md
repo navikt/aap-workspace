@@ -21,3 +21,7 @@ Eksempel:
 ./git-all.sh pull
 ```
 Vær forsiktig.  
+
+### latest-changed-repos.sh
+Viser sammendrag av hvilke endringer som er gjort nylig i repoene. 
+Bruk den feks. for å se hva du har gjort i løpet av dagen.
