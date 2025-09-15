@@ -1,7 +1,6 @@
 #gh api /teams/$(gh api /orgs/navikt/teams/aap | jq -r '.id')/repos --paginate \
 #  | jq -r 'map_values(select(.archived == false and .name != "vault-iac" and .name != "afp") | .name) | join("\n")'
 ktor-openapi-generator
-lagspill-bot
 mine-aap
 aap-alerts
 aap-api
@@ -35,8 +34,6 @@ aap-saksbehandling-pdfgen
 aap-sanity-brev
 aap-soknad
 aap-statistikk
-aap-teamslackbot
-aap-test-token-provider
 aap-tilgang
 aap-utbetal
 aap-visualisering-aktivitetsplikt
