@@ -1,6 +1,6 @@
 #gh api /teams/$(gh api /orgs/navikt/teams/aap | jq -r '.id')/repos --paginate \
 #  | jq -r 'map_values(select(.archived == false and .name != "vault-iac" and .name != "afp") | .name) | join("\n")' \
-# grep -vE '(lagspill-bot|aap-teamslackbot|aap-test-token-provider|aap-visualisering-aktivitetsplikt)'
+# grep -vE '(lagspill-bot|aap-teamslackbot|aap-test-token-provider|aap-visualisering-aktivitetsplikt|aap-intern-sysdok)'
 ktor-openapi-generator
 mine-aap
 aap-alerts
@@ -17,7 +17,6 @@ aap-dokumentinnhenting
 aap-felles-frontend
 aap-fss-proxy
 aap-innsending
-aap-intern-sysdok
 aap-kalkulator-frontend
 aap-kelvin-komponenter
 aap-kelvinMalinger
