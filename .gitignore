@@ -6,16 +6,8 @@
 !templates/
 !CODEOWNERS
 
-
-
 .idea/
 .gradle/
-.venv/
 
 #generated file:
 settings.gradle.kts 
-commits.csv
-uv.lock
-
-# mac
-.DS_Store
