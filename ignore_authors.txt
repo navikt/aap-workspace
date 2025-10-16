@@ -1,0 +1,44 @@
+# Ikke personer:
+dependabot[bot]
+dependabot
+github-actions[bot]
+Team Aap
+AAP felles dependabot config sync
+gradle-update-robot
+Team Innbygger
+author
+
+
+# Personer som ikke lenger jobber i AAP-teamet:
+Alexander Kjeserud
+AlexKjes
+Terje Heen
+Anders Østby
+eivinne
+Halvor Bjørn
+Halvor Grizzly Bjørn
+Henrik Jackson
+henrikjackson
+Joakim Bjørnstad
+Kyrre Havik
+Marius Bækken Glittum
+Marius Glittum
+rannveigskjerve
+Richard Borge
+Robin
+rt
+yongbinkwon
+Kristian Laskemoen
+Sturle Helland
+
+# Committere som ikke skal være på et team:
+# Område-techlead
+Trond Arve Wasskog
+# Designer
+Tobias McVey
+# Teknisk rådgiver
+Petter Ekrann
+# Data scientist
+Anders Lauvland
+# Borte en periode
+Marianne Grov
