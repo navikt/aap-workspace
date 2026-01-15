@@ -36,3 +36,4 @@ aap-soknad
 aap-statistikk
 aap-tilgang
 aap-utbetal
+aap-test-token-provider

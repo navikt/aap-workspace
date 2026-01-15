@@ -1,0 +1,45 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+SHOW_PERSON_OUTLINE()
+
+title Dagens løsning - fordeling av AAP-saker
+
+Person(bruker, Bruker, "En AAP-søker")
+Person(saksbehandler, Saksbehandler, "Saksbehandler i NAV")
+
+System_Boundary(kelvin, "Kelvin") {
+    Container(kelvin_sak, Saksbehandling, "", "")
+    Container(behandlingsflyt, "Kelvin-oppgave", "", "")
+    Container(arena_oppslag, "Arena-oppslag", "", "System for oppslag i Arena-historikk")
+}
+
+System_Boundary(arena, "Arena") {
+    Container(arena_sak, Saksbehandling, "", "")
+    ContainerDb(arenadb, "Arena-databasen", "Oracle Database", "Felles database for Arena")
+    Container(arena_oppgave, "Arena-oppgave", "", "")
+}
+
+Container(postmottak, "Postmottak", "System for fordeling av AAP-post")
+ContainerDb(journalpost, "Journalpost", "System for mottak av digital post")
+
+Rel(bruker, journalpost, "Sender saksdokumenter til")
+Rel(postmottak, journalpost, "Henter post fra")
+
+Rel(postmottak, arena_oppgave, "Fordeler sak til", "")
+Rel(postmottak, behandlingsflyt, "Fordeler sak til", "")
+Rel(postmottak, arena_oppslag, "Evaluererer Arenahistorikk-regel", "")
+
+Rel_U(saksbehandler, kelvin_sak, "Behandler sak i")
+'Rel_D(kelvin_sak, saksbehandler, "Opplyser om evt. historikk i Arena")
+
+Rel_U(saksbehandler, arena_sak, "Behandler sak i")
+'Rel_D(arena_sak, saksbehandler, "Opplyser om evt. historikk i Kelvin")
+
+Rel(arena_oppslag, arenadb, "Leser fra")
+
+Lay_R(saksbehandler, kelvin)
+Lay_R(saksbehandler, arena)
+
+SHOW_LEGEND()
+@enduml
