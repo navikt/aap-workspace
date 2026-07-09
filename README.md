@@ -9,7 +9,8 @@ Kjør ./init.sh for å initialisere.
 Det vil laste ned alle AAP-repoene, og lage en gradle-config.
 
 Deretter kan du åpne mappen til dette repoet i IntelliJ IDEA, 
-eller en annen IDE, for å ha alle repoene tilgjengelig i samme editor samtidig.
+eller en annen IDE, for å ha alle repoene tilgjengelig i samme editor samtidig. 
+Du kan også velge å åpne ett og ett repo. 
 
 Du kan bygge alle aap-repoene samtidig ved å bruke ./gradlew build osv. fra denne mappen.
 
