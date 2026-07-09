@@ -4,6 +4,7 @@ Slik får du alle aap-repoene i samme mappe, og kan bygge dem sammen.
 
 Forutsetter at gh-cli er installert, og at den er logget inn.
 
+### Komme i gang
 Kjør ./init.sh for å initialisere. 
 Det vil laste ned alle AAP-repoene, og lage en gradle-config.
 
