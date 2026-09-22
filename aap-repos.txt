@@ -26,6 +26,7 @@ aap-oppgave
 aap-oppslag
 aap-paw-patrol
 aap-pdfgen
+aap-pdfgenerator
 aap-pdfgen-meldekort
 aap-postmottak-backend
 aap-saksbehandling
