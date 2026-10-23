@@ -37,3 +37,4 @@ aap-statistikk
 aap-tilgang
 aap-utbetal
 aap-test-token-provider
+aap-intern-sysdok
