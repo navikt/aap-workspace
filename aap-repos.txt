@@ -18,7 +18,6 @@ aap-fss-proxy
 aap-innsending
 aap-kalkulator-frontend
 aap-kelvin-komponenter
-aap-kelvinMalinger
 aap-meldekort
 aap-meldekort-backend
 aap-min-side-microfrontend

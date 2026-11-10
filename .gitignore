@@ -5,9 +5,10 @@
 !gradlew
 !templates/
 !CODEOWNERS
-
+.github/
 .idea/
 .gradle/
 
 #generated file:
 settings.gradle.kts 
+README-samlet.html
