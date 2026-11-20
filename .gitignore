@@ -5,10 +5,13 @@
 !gradlew
 !templates/
 !CODEOWNERS
+!/.agents/
 .github/*
 !.github/copilot-instructions.md
 .idea/
 .gradle/
+.DS_Store
+.agent-shell/
 
 #generated file:
 settings.gradle.kts 
